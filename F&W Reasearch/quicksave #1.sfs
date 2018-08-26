@@ -1,0 +1,4530 @@
+GAME
+{
+	version = 1.4.5
+	Title = F&W Reasearch (SCIENCE_SANDBOX)
+	Description = No description available.
+	linkURL = 
+	linkCaption = 
+	Mode = SCIENCE_SANDBOX
+	Status = 1
+	Seed = 2070246427
+	scene = 5
+	editor = None
+	flag = Squad/Flags/default
+	launchID = 27
+	defaultVABLaunchSite = LaunchPad
+	defaultSPHLaunchSite = Runway
+	modded = True
+	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
+	versionFull = 1.4.5.2243 (WindowsPlayer x64)
+	versionCreated = 1.4.5.2243 (WindowsPlayer x64)
+	PARAMETERS
+	{
+		preset = Custom
+		FLIGHT
+		{
+			CanQuickSave = True
+			CanQuickLoad = False
+			CanAutoSave = True
+			CanUseMap = True
+			CanSwitchVesselsNear = True
+			CanSwitchVesselsFar = True
+			CanTimeWarpHigh = True
+			CanTimeWarpLow = True
+			CanEVA = True
+			CanIVA = True
+			CanBoard = True
+			CanRestart = True
+			CanLeaveToEditor = True
+			CanLeaveToTrackingStation = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = True
+		}
+		EDITOR
+		{
+			CanSave = True
+			CanLoad = True
+			CanStartNew = True
+			CanLaunch = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+			startUpMode = 0
+			craftFileToLoad = 
+		}
+		TRACKINGSTATION
+		{
+			CanFlyVessel = True
+			CanAbortVessel = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		SPACECENTER
+		{
+			CanGoInVAB = True
+			CanGoInSPH = True
+			CanGoInTrackingStation = True
+			CanLaunchAtPad = True
+			CanLaunchAtRunway = True
+			CanGoToAdmin = True
+			CanGoToAstronautC = True
+			CanGoToMissionControl = True
+			CanGoToRnD = True
+			CanSelectFlag = True
+			CanLeaveToMainMenu = True
+		}
+		DIFFICULTY
+		{
+			AutoHireCrews = False
+			MissingCrewsRespawn = False
+			RespawnTimer = 7200
+			BypassEntryPurchaseAfterResearch = True
+			AllowStockVessels = False
+			IndestructibleFacilities = False
+			ResourceAbundance = 0.5
+			ReentryHeatScale = 1
+			EnableCommNet = True
+			AllowOtherLaunchSites = False
+		}
+		CAREER
+		{
+			TechTreeUrl = GameData/Squad/Resources/TechTree.cfg
+			StartingFunds = 10000
+			StartingScience = 0
+			StartingReputation = 0
+			FundsGainMultiplier = 0.6
+			RepGainMultiplier = 0.6
+			ScienceGainMultiplier = 0.6
+			FundsLossMultiplier = 2
+			RepLossMultiplier = 2
+			RepLossDeclined = 3
+		}
+		CommNetParams
+		{
+			requireSignalForControl = False
+			plasmaBlackout = False
+			rangeModifier = 0.65
+			DSNModifier = 1
+			occlusionMultiplierVac = 1
+			occlusionMultiplierAtm = 1
+			enableGroundStations = True
+		}
+		AdvancedParams
+		{
+			EnableKerbalExperience = False
+			ImmediateLevelUp = False
+			AllowNegativeCurrency = True
+			PressurePartLimits = False
+			GPartLimits = False
+			GKerbalLimits = False
+			KerbalGToleranceMult = 1
+			ResourceTransferObeyCrossfeed = True
+			ActionGroupsAlways = False
+			BuildingImpactDamageMult = 0.2
+			PartUpgradesInSandbox = False
+			PartUpgradesInCareer = True
+			PartUpgradesInMission = False
+		}
+		MissionParamsGeneral
+		{
+			enableFunding = True
+			startingFunds = 10000
+			spacer = 
+			enableKerbalLevels = True
+			kerbalLevelPilot = 1
+			kerbalLevelScientist = 1
+			kerbalLevelEngineer = 1
+			spacer2 = 
+			preventVesselRecovery = True
+		}
+		MissionParamsExtras
+		{
+			facilityOpenAC = True
+			astronautHiresAreFree = False
+			spacer = 
+			facilityOpenEditor = False
+			launchSitesOpen = True
+			spacer2 = 
+			cheatsEnabled = False
+		}
+		MissionParamsFacilities
+		{
+			facilityLevelAdmin = 1
+			facilityLevelAC = 1
+			facilityLevelLaunchpad = 1
+			facilityLevelMC = 1
+			facilityLevelRD = 1
+			facilityLevelRunway = 1
+			facilityLevelSPH = 1
+			facilityLevelTS = 1
+			facilityLevelVAB = 1
+		}
+	}
+	SCENARIO
+	{
+		name = CommNetScenario
+		scene = 7, 8, 5, 6
+	}
+	SCENARIO
+	{
+		name = PartUpgradeManager
+		scene = 6, 5, 7
+		UPGRADES
+		{
+			Unlocks
+			{
+			}
+			Enableds
+			{
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = ResourceScenario
+		scene = 7, 8, 5, 6, 21
+		RESOURCE_SETTINGS
+		{
+			GameSeed = 771788217
+			MaxDeltaTime = 21600
+		}
+	}
+	SCENARIO
+	{
+		name = ProgressTracking
+		scene = 7, 8, 5
+		Progress
+		{
+			FirstLaunch
+			{
+				completedManned = 102.37999999999677
+			}
+			FirstCrewToSurvive
+			{
+				completed = 213.47866455080097
+				crew
+				{
+					crews = Jebediah Kerman
+				}
+			}
+			RecordsAltitude
+			{
+				completed = 412.04224365224724
+				record = 70000
+			}
+			RecordsDepth
+			{
+				reached = 18413.446380565681
+				record = 0.75319070823024958
+			}
+			RecordsSpeed
+			{
+				reached = 8205.5862061602202
+				record = 2285.5392324478407
+			}
+			RecordsDistance
+			{
+				completed = 2195.2942626940544
+				record = 100000
+			}
+			ReachedSpace
+			{
+				completed = 412.04224365224724
+				vessel
+				{
+					name = Skipper
+					flag = Squad/Flags/default
+				}
+				crew
+				{
+					crews = Jebediah Kerman
+				}
+			}
+			Kerbin
+			{
+				reached = 55.040000000003005
+				Orbit
+				{
+					completedManned = 4879.916428982192
+					vessel
+					{
+						name = Orbiter
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Valentina Kerman
+					}
+				}
+				Landing
+				{
+					completed = 1117.0669775387689
+					vessel
+					{
+						name = Skipper
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Valentina Kerman
+					}
+				}
+				Splashdown
+				{
+					completed = 1356.1818457026193
+				}
+				Science
+				{
+					completedManned = 67.300000000003749
+					vessel
+					{
+						name = Skipper
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Jebediah Kerman
+					}
+				}
+				Spacewalk
+				{
+					completed = 433.9068652342699
+					crew
+					{
+						crews = Jebediah Kerman
+					}
+				}
+				SurfaceEVA
+				{
+					completed = 55.040000000003005
+					crew
+					{
+						crews = Jebediah Kerman
+					}
+				}
+				ReturnFromOrbit
+				{
+					completed = 8648.0017432720888
+					vessel
+					{
+						name = Orbiter
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Valentina Kerman
+					}
+				}
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = ResearchAndDevelopment
+		scene = 7, 8, 5, 6
+		sci = 105.08725
+		Tech
+		{
+			id = start
+			state = Available
+			cost = 0
+			part = basicFin
+			part = mk1pod
+			part = solidBooster.sm
+			part = GooExperiment
+			part = trussPiece1x
+			part = parachuteSingle
+			part = kv1Pod
+			part = Engineer7500
+			part = EngineerChip
+		}
+		Tech
+		{
+			id = engineering101
+			state = Available
+			cost = 5
+			part = SurfAntenna
+			part = stackDecoupler
+			part = longAntenna
+			part = sensorThermometer
+			part = Decoupler.1
+		}
+		Tech
+		{
+			id = basicRocketry
+			state = Available
+			cost = 5
+			part = fuelTankSmallFlat
+			part = solidBooster
+			part = liquidEngine2
+		}
+		Tech
+		{
+			id = survivability
+			state = Available
+			cost = 15
+			part = ServiceBay.125
+			part = parachuteRadial
+			part = radialDrogue
+			part = miniLandingLeg
+			part = radPanelSm
+			part = sensorBarometer
+			part = HeatShield1
+			part = HeatShield0
+		}
+		Tech
+		{
+			id = basicScience
+			state = Available
+			cost = 45
+			part = HighGainAntenna5
+			part = radPanelLg
+			part = radPanelEdge
+			part = ScienceBox
+			part = science.module
+			part = batteryPack
+			part = probeCoreSphere
+		}
+		Tech
+		{
+			id = generalRocketry
+			state = Available
+			cost = 20
+			part = fuelTankSmall
+			part = solidBooster1-1
+			part = liquidEngine
+		}
+		Tech
+		{
+			id = stability
+			state = Available
+			cost = 18
+			part = radialDecoupler
+			part = winglet
+			part = noseCone
+		}
+		Tech
+		{
+			id = advRocketry
+			state = Available
+			cost = 45
+			part = Size1p5.Tank.01
+			part = Size1p5.Size1.Adapter.02
+			part = fuelTank
+			part = radialLiquidEngine1-2
+			part = liquidEngine3
+		}
+		Tech
+		{
+			id = aviation
+			state = Available
+			cost = 45
+			part = GearFree
+			part = GearFixed
+			part = MK1Fuselage
+			part = miniFuselage
+			part = miniJetEngine
+			part = Mark1Cockpit
+			part = structuralWing3
+			part = StandardCtrlSrf
+			part = wingConnector5
+			part = wingConnector2
+			part = miniIntake
+			part = airplaneTail
+			part = tailfin
+			part = sweptWing
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedLaunchPad
+			title = Crew Report from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedLaunchPad
+			title = Mystery Goo™ Observation from LaunchPad
+			dsc = 1
+			scv = 0.0532544553
+			sbv = 0.300000012
+			sci = 3.69230771
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedLaunchPad
+			title = Surface Sample from LaunchPad
+			dsc = 1
+			scv = 0.0625
+			sbv = 0.300000012
+			sci = 11.25
+			cap = 12
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedLaunchPad
+			title = EVA Report from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedLaunchPad
+			title = Temperature Scan from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = crewReport@KerbinFlyingLowShores
+			title = Crew Report while flying over Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 3.5
+			cap = 3.5
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinFlyingLow
+			title = Mystery Goo™ Observation while flying at Kerbin
+			dsc = 1
+			scv = 0.053254433
+			sbv = 0.699999988
+			sci = 8.6153841
+			cap = 9.09999943
+		}
+		Science
+		{
+			id = temperatureScan@KerbinFlyingLowShores
+			title = Temperature Scan while flying over Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 5.5999999
+			cap = 5.5999999
+		}
+		Science
+		{
+			id = evaReport@KerbinFlyingLowShores
+			title = EVA Report while flying over Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 5.5999999
+			cap = 5.5999999
+		}
+		Science
+		{
+			id = recovery@KerbinFlew
+			title = Recovery of a vessel that survived a flight.
+			dsc = 1
+			scv = 6.35782897E-07
+			sbv = 5
+			sci = 5.99999619
+			cap = 6
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedLaunchPad
+			title = Atmospheric Pressure Scan from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = crewReport@KerbinFlyingHigh
+			title = Crew Report from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0
+			sbv = 0.899999976
+			sci = 4.5
+			cap = 4.5
+		}
+		Science
+		{
+			id = temperatureScan@KerbinFlyingHigh
+			title = Temperature Scan from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0
+			sbv = 0.899999976
+			sci = 7.19999981
+			cap = 7.19999981
+		}
+		Science
+		{
+			id = barometerScan@KerbinFlyingHigh
+			title = Atmospheric Pressure Scan from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 1
+			sbv = 0.899999976
+			sci = 0
+			cap = 10.7999992
+		}
+		Science
+		{
+			id = evaReport@KerbinFlyingHigh
+			title = EVA Report from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0
+			sbv = 0.899999976
+			sci = 7.19999981
+			cap = 7.19999981
+		}
+		Science
+		{
+			id = evaReport@KerbinInSpaceLowShores
+			title = EVA Report from space just above Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinFlyingHigh
+			title = Mystery Goo™ Observation from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0.0532543957
+			sbv = 0.899999976
+			sci = 11.0769234
+			cap = 11.6999998
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedGrasslands
+			title = EVA Report from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedGrasslands
+			title = Surface Sample from Kerbin's Grasslands
+			dsc = 1
+			scv = 0.015625
+			sbv = 0.300000012
+			sci = 11.8125
+			cap = 12
+		}
+		Science
+		{
+			id = recovery@KerbinSubOrbited
+			title = Recovery of a vessel returned from a sub-orbital flight on Kerbin
+			dsc = 1
+			scv = 3.57627846E-06
+			sbv = 8
+			sci = 9.59996605
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = barometerScan@KerbinFlyingLow
+			title = Atmospheric Pressure Scan while flying at Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 8.39999962
+			cap = 8.39999962
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfSplashedShores
+			title = Crew Report from Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.400000006
+			sci = 2
+			cap = 2
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfSplashedShores
+			title = Surface Sample from Kerbin's Shores
+			dsc = 1
+			scv = 0.25
+			sbv = 0.400000006
+			sci = 12
+			cap = 16
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfSplashedShores
+			title = EVA Report from Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.400000006
+			sci = 3.20000005
+			cap = 3.20000005
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedLaunchPad
+			title = Materials Study from LaunchPad
+			dsc = 1
+			scv = 0.0478515998
+			sbv = 0.300000012
+			sci = 9.140625
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinFlyingLow
+			title = Materials Study while flying at Kerbin
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.699999988
+			sci = 17.5
+			cap = 22.3999996
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedKSC
+			title = Crew Report from KSC
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedKSC
+			title = EVA Report from KSC
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedKSC
+			title = Surface Sample from KSC
+			dsc = 1
+			scv = 0.25
+			sbv = 0.300000012
+			sci = 9
+			cap = 12
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinFlyingHigh
+			title = Materials Study from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.899999976
+			sci = 22.5
+			cap = 28.7999992
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfSplashedWater
+			title = Crew Report from Kerbin's Water
+			dsc = 1
+			scv = 0
+			sbv = 0.400000006
+			sci = 2
+			cap = 2
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfSplashedWater
+			title = Atmospheric Pressure Scan from Kerbin's Water
+			dsc = 1
+			scv = 0
+			sbv = 0.400000006
+			sci = 4.80000019
+			cap = 4.80000019
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfSplashedWater
+			title = Temperature Scan from Kerbin's Water
+			dsc = 1
+			scv = 0
+			sbv = 0.400000006
+			sci = 3.20000005
+			cap = 3.20000005
+		}
+		Science
+		{
+			id = barometerScan@KerbinInSpaceLow
+			title = Atmospheric Pressure Scan while in space near Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 12
+			cap = 12
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinInSpaceLow
+			title = Materials Study while in space near Kerbin
+			dsc = 1
+			scv = 0.21875
+			sbv = 1
+			sci = 25
+			cap = 32
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinInSpaceLow
+			title = Mystery Goo™ Observation while in space near Kerbin
+			dsc = 1
+			scv = 0.0532544218
+			sbv = 1
+			sci = 12.3076925
+			cap = 13
+		}
+		Science
+		{
+			id = temperatureScan@KerbinInSpaceLow
+			title = Temperature Scan while in space near Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
+		Science
+		{
+			id = evaReport@KerbinInSpaceLowWater
+			title = EVA Report from space just above Kerbin's Water
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedMountains
+			title = Crew Report from Kerbin's Mountains
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedMountains
+			title = EVA Report from Kerbin's Mountains
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedMountains
+			title = Surface Sample from Kerbin's Mountains
+			dsc = 1
+			scv = 0.25
+			sbv = 0.300000012
+			sci = 9
+			cap = 12
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedMountains
+			title = Temperature Scan from Kerbin's Mountains
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedMountains
+			title = Mystery Goo™ Observation from Kerbin's Mountains
+			dsc = 1
+			scv = 0.230769247
+			sbv = 0.300000012
+			sci = 3
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedMountains
+			title = Atmospheric Pressure Scan from Kerbin's Mountains
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = crewReport@KerbinInSpaceLow
+			title = Crew Report while in space near Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 5
+			cap = 5
+		}
+		Science
+		{
+			id = evaReport@KerbinInSpaceLowMountains
+			title = EVA Report from space just above Kerbin's Mountains
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
+		Science
+		{
+			id = evaReport@KerbinInSpaceLowDeserts
+			title = EVA Report from space just above Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedDeserts
+			title = Surface Sample from Kerbin's Deserts
+			dsc = 1
+			scv = 0.25
+			sbv = 0.300000012
+			sci = 9
+			cap = 12
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedDeserts
+			title = EVA Report from Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = recovery@KerbinOrbited
+			title = Recovery of a vessel returned from orbit around Kerbin
+			dsc = 1
+			scv = 0.166666672
+			sbv = 10
+			sci = 10
+			cap = 12
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedRunway
+			title = EVA Report from Runway
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedRunway
+			title = Surface Sample from Runway
+			dsc = 1
+			scv = 0.0625
+			sbv = 0.300000012
+			sci = 11.25
+			cap = 12
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedNorthernIceShelf
+			title = Mystery Goo™ Observation from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0.230769247
+			sbv = 0.300000012
+			sci = 3
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedNorthernIceShelf
+			title = Temperature Scan from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedNorthernIceShelf
+			title = Crew Report from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedNorthernIceShelf
+			title = Atmospheric Pressure Scan from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedNorthernIceShelf
+			title = Materials Study from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.300000012
+			sci = 7.50000048
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedNorthernIceShelf
+			title = EVA Report from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedNorthernIceShelf
+			title = Surface Sample from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0.25
+			sbv = 0.300000012
+			sci = 9
+			cap = 12
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedSouthernIceShelf
+			title = Crew Report from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedSouthernIceShelf
+			title = Atmospheric Pressure Scan from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedSouthernIceShelf
+			title = Temperature Scan from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedSouthernIceShelf
+			title = Mystery Goo™ Observation from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0.230769247
+			sbv = 0.300000012
+			sci = 3
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedSouthernIceShelf
+			title = Materials Study from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.300000012
+			sci = 7.50000048
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedSouthernIceShelf
+			title = Surface Sample from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0.25
+			sbv = 0.300000012
+			sci = 9
+			cap = 12
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedSouthernIceShelf
+			title = EVA Report from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedShores
+			title = Crew Report from Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedShores
+			title = Mystery Goo™ Observation from Kerbin's Shores
+			dsc = 1
+			scv = 0.230769247
+			sbv = 0.300000012
+			sci = 3
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedShores
+			title = Atmospheric Pressure Scan from Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedShores
+			title = Temperature Scan from Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedShores
+			title = Materials Study from Kerbin's Shores
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.300000012
+			sci = 7.50000048
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedShores
+			title = EVA Report from Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedShores
+			title = Surface Sample from Kerbin's Shores
+			dsc = 1
+			scv = 0.25
+			sbv = 0.300000012
+			sci = 9
+			cap = 12
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedGrasslands
+			title = Materials Study from Kerbin's Grasslands
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.300000012
+			sci = 7.50000048
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedGrasslands
+			title = Mystery Goo™ Observation from Kerbin's Grasslands
+			dsc = 1
+			scv = 0.230769247
+			sbv = 0.300000012
+			sci = 3
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedGrasslands
+			title = Crew Report from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedGrasslands
+			title = Atmospheric Pressure Scan from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedGrasslands
+			title = Temperature Scan from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedRunway
+			title = Materials Study from Runway
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.300000012
+			sci = 7.50000048
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedRunway
+			title = Mystery Goo™ Observation from Runway
+			dsc = 1
+			scv = 0.230769247
+			sbv = 0.300000012
+			sci = 3
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedRunway
+			title = Temperature Scan from Runway
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfSplashedWater
+			title = Materials Study from Kerbin's Water
+			dsc = 1
+			scv = 0.218750015
+			sbv = 0.400000006
+			sci = 10
+			cap = 12.8000002
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfSplashedWater
+			title = Mystery Goo™ Observation from Kerbin's Water
+			dsc = 1
+			scv = 0.230769277
+			sbv = 0.400000006
+			sci = 4
+			cap = 5.20000029
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfSplashedWater
+			title = EVA Report from Kerbin's Water
+			dsc = 1
+			scv = 0
+			sbv = 0.400000006
+			sci = 3.20000005
+			cap = 3.20000005
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfSplashedWater
+			title = Surface Sample from Kerbin's Water
+			dsc = 1
+			scv = 0.25
+			sbv = 0.400000006
+			sci = 12
+			cap = 16
+		}
+	}
+	SCENARIO
+	{
+		name = VesselRecovery
+		scene = 5, 7, 8, 6
+	}
+	SCENARIO
+	{
+		name = ScenarioAchievements
+		scene = 7, 8, 5, 6
+	}
+	SCENARIO
+	{
+		name = ScenarioCustomWaypoints
+		scene = 7, 8, 21
+	}
+	SCENARIO
+	{
+		name = ScenarioDestructibles
+		scene = 5, 7, 6, 8
+		SpaceCenter/Administration/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/AstronautComplex/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_launchPad
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_sphereTank
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/KSCFlagPoleLaunchPad
+		{
+			intact = True
+		}
+		SpaceCenter/MissionControl/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/SmallLab
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/CentralBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/CornerLab
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/WindTunnel
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/Observatory
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/SideLab
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SE
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NE
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NW
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SW
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End09
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End27
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section1
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section2
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section3
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section4
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_south
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_north
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_east
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/PodMemorial
+		{
+			intact = True
+		}
+		SpaceCenter/FlagPole/Facility
+		{
+			intact = True
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioDiscoverableObjects
+		scene = 7, 8, 5
+		lastSeed = 1245191966
+		sizeCurve
+		{
+			key = 0 0 1.5 1.5
+			key = 0.3 0.45 0.875 0.875
+			key = 0.7 0.55 0.875 0.875
+			key = 1 1 1.5 1.5
+		}
+	}
+	SCENARIO
+	{
+		name = SentinelScenario
+		scene = 7, 8, 5
+		NextSpawnTime = 30025.615612363636
+	}
+	FLIGHTSTATE
+	{
+		version = 1.4.5
+		UT = 21950.030177456189
+		activeVessel = 0
+		mapViewFiltering = -1026
+		commNetUIModeTracking = Network
+		commNetUIModeFlight = Path
+		VESSEL
+		{
+			pid = 353d426e1bb947809e8e31f8275112a7
+			persistentId = 4012299747
+			name = Ast. HSJ-227
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 0.02
+			lct = 0.02
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -2.8344811842334807
+			lon = -178.91869178077783
+			alt = 14594722105.300936
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.298433661,0.402898014,-0.817398846,0.283672005
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 15240597593.934568
+				ECC = 0.10915993718738903
+				INC = 2.872237354818997
+				LPE = 2.1173196569747783
+				LAN = 261.77333536816229
+				MNA = -0.055480149656831977
+				EPH = 2043585.7560839844
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 559298752
+				mid = 559298752
+				persistentId = 1333325295
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 0.02
+				lifetime = 586354.71038818359
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 7770c2197e7645ca9429f3301a26bacf
+			persistentId = 941569232
+			name = Ast. XUC-428
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 15.039999999999768
+			lct = 15.039999999999768
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = 1.1750295551685903
+			lon = -176.97920127363852
+			alt = 15461167856.724154
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.323410153,-0.406737894,0.82250917,0.231189951
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 16016853995.006653
+				ECC = 0.15149120290099416
+				INC = 1.1809243659519844
+				LPE = 176.04138536251062
+				LAN = 98.761337698228203
+				MNA = 0.040419838364633719
+				EPH = 2507460.743125
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1245471819
+				mid = 1245471819
+				persistentId = 2382102889
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 15.039999999999768
+				lifetime = 126424.89624023438
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = a54cec7a4b68479a871c79a96f61af5a
+			persistentId = 466253168
+			name = Ast. WXR-928
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 53.200000000002717
+			lct = 53.200000000002717
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.71785396469198937
+			lon = -176.85074473227002
+			alt = 14021957695.126425
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.3518112,-0.35944587,0.431313097,0.748997092
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 14030744041.32937
+				ECC = 0.028909369837475572
+				INC = 0.81833146080627606
+				LPE = 11.149015610798497
+				LAN = 301.88682117990425
+				MNA = -0.019233477647615235
+				EPH = 3379842.7996093752
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 366580723
+				mid = 366580723
+				persistentId = 3655636463
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 53.200000000002717
+				lifetime = 1068839.2639160156
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 202a660e0d4a40578c79392abfff09f4
+			persistentId = 3843194047
+			name = Ast. BKI-787
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 67.060000000003797
+			lct = 67.060000000003797
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = 0.39180801558453021
+			lon = -144.84373955213104
+			alt = 16794857491.890829
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.0911391154,-0.651221097,0.709044814,0.254676521
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 15301321193.854349
+				ECC = 0.11470890377328379
+				INC = 0.65696308477418686
+				LPE = 216.18520247390879
+				LAN = 178.60136451216169
+				MNA = -0.18178707728151913
+				EPH = 5157812.9218164058
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1432807737
+				mid = 1432807737
+				persistentId = 3464727938
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 67.060000000003797
+				lifetime = 780765.95764160156
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = f6cb5aaf75f944aeaea6d37f66afe309
+			persistentId = 3640699673
+			name = Ast. QZW-753
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 178.2232617187621
+			lct = 178.2232617187621
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.4300486266143646
+			lon = 177.37353275905181
+			alt = 14434250741.730644
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.535896599,-0.223613098,-0.182861179,0.793330789
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 15701246909.563528
+				ECC = 0.13968691114981904
+				INC = 0.4413353732954719
+				LPE = 353.07705238897563
+				LAN = 254.53603787508504
+				MNA = 0.24900121812027487
+				EPH = 2216032.8253124999
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1616511502
+				mid = 1616511502
+				persistentId = 434928382
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 178.2232617187621
+				lifetime = 843732.861328125
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 64603d156e614990a78def3eb15f6195
+			persistentId = 3381671994
+			name = Ast. IBY-516
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 213.09866455080078
+			lct = 213.09866455080078
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = 0.16193995498680883
+			lon = -177.6041696893636
+			alt = 13369714694.073122
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.460213959,-0.54535836,-0.505533516,0.484998196
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 13617242339.953749
+				ECC = 0.0092649728074692527
+				INC = 0.53284625829540089
+				LPE = 65.375457664772924
+				LAN = 20.265832121735514
+				MNA = -1.1594007112599549
+				EPH = 5064059.4731762698
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1960417266
+				mid = 1960417266
+				persistentId = 1082925236
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 213.09866455080078
+				lifetime = 1471549.7680664063
+				refTime = 1728000
+				size = 1
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = c64280f821024c85abdfe409ad69fc0a
+			persistentId = 3831448193
+			name = Ast. USU-266
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 240.81866455081496
+			lct = 240.81866455081496
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.89219656250923807
+			lon = 178.81618276384069
+			alt = 13628418408.202085
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.529632747,-0.292493194,0.525280178,0.598345697
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 14583514687.721125
+				ECC = 0.065379887207363138
+				INC = 0.98674987450023033
+				LPE = 341.25816300149648
+				LAN = 243.72734577937138
+				MNA = 0.11935879631328054
+				EPH = 1351657.5606079102
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1245191966
+				mid = 1245191966
+				persistentId = 1864680943
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 240.81866455081496
+				lifetime = 997229.36096191406
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 010d994ae75e4f5fa76f30151aa65b4a
+			persistentId = 696517457
+			name = Orbiter Debris
+			type = Debris
+			sit = SPLASHED
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = True
+			met = 9.2572900390550785
+			lct = 2427.120351561035
+			lastUT = 2436.43764160009
+			distanceTraveled = 2.6316367750116637E-11
+			root = 0
+			lat = 5.8160244207305611
+			lon = -57.835185044476262
+			alt = -4.1057289985474199
+			hgt = -4.1057291
+			nrm = -5.80847263E-05,0.99993664,-0.0112643242
+			rot = 0.193829298,-0.480728388,0.643460095,-0.563284636
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 299997.94713550073
+				ECC = 0.99999999999999989
+				INC = 5.8160244207306064
+				LPE = 270
+				LAN = 308.66110879085318
+				MNA = 3.1415926207170166
+				EPH = 21938.290177455932
+				REF = 1
+			}
+			PART
+			{
+				name = HeatShield1
+				cid = 4294148134
+				uid = 441890948
+				mid = 3599830475
+				persistentId = 2382906556
+				launchID = 11
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 1
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = direct, -1
+				attN = bottom, -1
+				attN = top, -1
+				mass = 0.100000001
+				shielded = False
+				temp = 330.00371086641064
+				tempExt = 312.62145249176024
+				tempExtUnexp = 312.62196888333358
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = HeatShield1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					activejettisonName = fairing
+					isJettisoned = True
+					shroudHideOverride = False
+					stagingEnabled = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAblator
+					isEnabled = True
+					nominalAmountRecip = 0.0050000000000000001
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleColorChanger
+					isEnabled = True
+					animState = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							active = False
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = False
+					stagingEnabled = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Ablator
+					amount = 199.99845135089134
+					maxAmount = 200
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 2338.46160156111
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 1982.00830078018
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 85ad5f61bb3c4169897ede832739a618
+			persistentId = 3392109680
+			name = Orbiter Debris
+			type = Debris
+			sit = SPLASHED
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = True
+			met = 9.2572900390550785
+			lct = 2427.120351561035
+			lastUT = 2436.43764160009
+			distanceTraveled = 0.55605249730258444
+			root = 0
+			lat = 5.8159975122768621
+			lon = -57.835124328834418
+			alt = -0.54965718847233802
+			hgt = -0.549657166
+			nrm = -0.00993838906,0.999938369,-0.0049687326
+			rot = -0.308472246,-0.739923,0.595394015,-0.0535243563
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 5.8159975122769776
+				LPE = 270
+				LAN = 308.66116950649501
+				MNA = 0
+				EPH = 21938.290177455932
+				REF = 1
+			}
+			PART
+			{
+				name = miniLandingLeg
+				cid = 4294042050
+				uid = 31230524
+				mid = 3599830475
+				persistentId = 203798840
+				launchID = 11
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.00000012
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.0149999997
+				shielded = False
+				temp = 325.7044871218323
+				tempExt = 316.26614202010285
+				tempExtUnexp = 316.26766815270662
+				expt = 0
+				state = 0
+				PreFailState = 0
+				attached = False
+				autostrutMode = ForceHeaviest
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = miniLandingLeg
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleWheelBase
+					isEnabled = True
+					wheelType = LEG
+					isGrounded = False
+					autoFriction = False
+					frictionMultiplier = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActAutoFrictionToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelSuspension
+					isEnabled = True
+					springTweakable = 1
+					damperTweakable = 1
+					suspensionPos = (-0.000564279559, 0, -3.02132958E-05)
+					autoBoost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelDeployment
+					isEnabled = True
+					shieldedCanDeploy = False
+					stateDisplayString = Retracted
+					stateString = Retracted
+					stagingEnabled = True
+					position = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = Gear
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelLock
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelDamage
+					isEnabled = True
+					isDamaged = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 2338.46160156111
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 1982.00830078018
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 7dfe3fd89b7548c3bc958c76d4eb5550
+			persistentId = 292230754
+			name = Orbiter Debris
+			type = Debris
+			sit = SPLASHED
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = True
+			met = 9.2572900390550785
+			lct = 2427.120351561035
+			lastUT = 2436.43764160009
+			distanceTraveled = 0.55951666735056083
+			root = 0
+			lat = 5.8159867301311827
+			lon = -57.835236321797538
+			alt = -0.34575819736346602
+			hgt = -0.3457582
+			nrm = -0.0668088794,0.997580767,0.0192161277
+			rot = -0.661618173,-0.437314272,-0.00309228548,0.609104395
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 5.8159867301312165
+				LPE = 270
+				LAN = 308.66105751353189
+				MNA = 0
+				EPH = 21938.290177455932
+				REF = 1
+			}
+			PART
+			{
+				name = miniLandingLeg
+				cid = 4294039642
+				uid = 583257968
+				mid = 3599830475
+				persistentId = 4073909336
+				launchID = 11
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.00000012
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.0149999997
+				shielded = False
+				temp = 325.70560825499911
+				tempExt = 316.27755999079005
+				tempExtUnexp = 316.27921741494612
+				expt = 0
+				state = 0
+				PreFailState = 0
+				attached = False
+				autostrutMode = ForceHeaviest
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = miniLandingLeg
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleWheelBase
+					isEnabled = True
+					wheelType = LEG
+					isGrounded = False
+					autoFriction = False
+					frictionMultiplier = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActAutoFrictionToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelSuspension
+					isEnabled = True
+					springTweakable = 1
+					damperTweakable = 1
+					suspensionPos = (-0.000564279559, 0, -3.02132958E-05)
+					autoBoost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelDeployment
+					isEnabled = True
+					shieldedCanDeploy = False
+					stateDisplayString = Retracted
+					stateString = Retracted
+					stagingEnabled = True
+					position = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = Gear
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelLock
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelDamage
+					isEnabled = True
+					isDamaged = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 2338.46160156111
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 1982.00830078018
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 15e7e90f797f4d998aaea02a9ec6b0db
+			persistentId = 3085617174
+			name = Orbiter Debris
+			type = Debris
+			sit = SPLASHED
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = True
+			met = 9.2572900390550785
+			lct = 2427.120351561035
+			lastUT = 2436.43764160009
+			distanceTraveled = 0.53245151359753451
+			root = 0
+			lat = 5.816086452521545
+			lon = -57.835192505693271
+			alt = -0.34553726005833596
+			hgt = -0.345537245
+			nrm = -0.0659731328,0.99766314,-0.0177695751
+			rot = -0.362926215,0.30240187,-0.590987563,0.653889418
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 299999.82723136997
+				ECC = 0.99999999999999989
+				INC = 5.8160864525214775
+				LPE = 270
+				LAN = 308.66110132963615
+				MNA = 3.1415926207170166
+				EPH = 21938.290177455932
+				REF = 1
+			}
+			PART
+			{
+				name = miniLandingLeg
+				cid = 4294039466
+				uid = 2323553217
+				mid = 3599830475
+				persistentId = 2347798254
+				launchID = 11
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.00000012
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.0149999997
+				shielded = False
+				temp = 325.704377990539
+				tempExt = 316.2665841775684
+				tempExtUnexp = 316.26816385949672
+				expt = 0
+				state = 0
+				PreFailState = 0
+				attached = False
+				autostrutMode = ForceHeaviest
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = miniLandingLeg
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleWheelBase
+					isEnabled = True
+					wheelType = LEG
+					isGrounded = False
+					autoFriction = False
+					frictionMultiplier = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActAutoFrictionToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelSuspension
+					isEnabled = True
+					springTweakable = 1
+					damperTweakable = 1
+					suspensionPos = (-0.000564279559, 0, -3.02132958E-05)
+					autoBoost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelDeployment
+					isEnabled = True
+					shieldedCanDeploy = False
+					stateDisplayString = Retracted
+					stateString = Retracted
+					stagingEnabled = True
+					position = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = Gear
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelLock
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelDamage
+					isEnabled = True
+					isDamaged = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 2338.46160156111
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 1982.00830078018
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = f13b86d0c2fe40738cf5216089aa27ba
+			persistentId = 670328619
+			name = Orbiter Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 67.214882812441829
+			lct = 3863.9131622428617
+			lastUT = 3931.2080450553035
+			distanceTraveled = 122.56654708087368
+			root = 0
+			lat = -1.2156872879362046
+			lon = -80.252156065996232
+			alt = 2528.6606971366564
+			hgt = 1.38411844
+			nrm = -0.693005323,-0.612225115,0.380689114
+			rot = 0.653612375,-0.667325258,0.196404025,0.298150331
+			CoM = 0.0800637677,-0.200005904,0.00665352074
+			stg = 3
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 1.2156947255581394
+				LPE = 90
+				LAN = 286.24415682722446
+				MNA = 0
+				EPH = 21938.290177455932
+				REF = 1
+			}
+			PART
+			{
+				name = winglet
+				cid = 4293465872
+				uid = 3267548930
+				mid = 1395741610
+				persistentId = 4088955114
+				launchID = 14
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.00000012
+				mirror = 1,1,-1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 6
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.0370000005
+				shielded = False
+				temp = 456.7817182444457
+				tempExt = 434.12842714803099
+				tempExtUnexp = 434.1256037135563
+				expt = 0.100000001
+				state = 1
+				PreFailState = 0
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 3507.51780091491
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 3481.27780091494
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 7c8a61faef6a41449db33597f3b58829
+			persistentId = 3627888027
+			name = Orbiter Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 67.214882812441829
+			lct = 3863.9131622428617
+			lastUT = 3931.2080450553035
+			distanceTraveled = 157.31441972968523
+			root = 0
+			lat = -1.2211049629183288
+			lon = -80.247993340701072
+			alt = 2525.5609181481414
+			hgt = 1.0227226
+			nrm = -0.197715148,-0.60924083,-0.767941833
+			rot = 0.154248253,-0.0890919939,0.781575084,0.597838342
+			CoM = 0.0799970478,-0.199979201,0.00663616462
+			stg = 3
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 301262.78157757659
+				ECC = 0.99999999999999989
+				INC = 1.2210931388535344
+				LPE = 90
+				LAN = 286.24831723291061
+				MNA = -3.1415926207170166
+				EPH = 21938.290177455932
+				REF = 1
+			}
+			PART
+			{
+				name = winglet
+				cid = 4293465836
+				uid = 1072705288
+				mid = 1395741610
+				persistentId = 601711105
+				launchID = 14
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.00000012
+				mirror = 1,1,-1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 6
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.0370000005
+				shielded = False
+				temp = 455.63545097610603
+				tempExt = 433.3310564561998
+				tempExtUnexp = 433.32835779455354
+				expt = 0.100000001
+				state = 1
+				PreFailState = 0
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 3507.51780091491
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 3481.27780091494
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 1ab2dd8571d84f558a1b1cc8fbf68ac9
+			persistentId = 3557884196
+			name = Simple Plane Debris
+			type = Debris
+			sit = SPLASHED
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = Runway
+			landedAt = 
+			displaylandedAt = 
+			splashed = True
+			met = 30.905664063109725
+			lct = 18413.506380565683
+			lastUT = 18444.412044628793
+			distanceTraveled = 1204.0551510685323
+			root = 0
+			lat = -42.483895454016384
+			lon = -72.302969417718984
+			alt = -0.49083937797695398
+			hgt = -0.490839392
+			nrm = 0.984592795,0.0308647454,0.172117472
+			rot = 0.224586502,-0.618348598,0.304027349,-0.689037919
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 42.483895454016377
+				LPE = 90
+				LAN = 294.19332441761048
+				MNA = 0
+				EPH = 21938.290177455932
+				REF = 1
+			}
+			PART
+			{
+				name = GearFree
+				cid = 4292773766
+				uid = 3529474052
+				mid = 4041906592
+				persistentId = 1109363075
+				launchID = 19
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.00000048
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.0149999997
+				shielded = False
+				temp = 270.483909291347
+				tempExt = 275.85043947119874
+				tempExtUnexp = 275.85071400241515
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = False
+				autostrutMode = ForceHeaviest
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = GearFree
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleWheelBase
+					isEnabled = True
+					wheelType = FREE
+					isGrounded = False
+					autoFriction = True
+					frictionMultiplier = 0.999590039
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActAutoFrictionToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelSuspension
+					isEnabled = True
+					springTweakable = 1
+					damperTweakable = 1
+					suspensionPos = (1.39623789E-05, -0.379986018, 2.14576539E-06)
+					autoBoost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelSteering
+					isEnabled = True
+					steeringEnabled = True
+					steeringInvert = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						SteeringToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelDamage
+					isEnabled = True
+					isDamaged = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 18168.2830797793
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 16423.4353453664
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 2765a20c975d4d55b69469fb3b43ddd3
+			persistentId = 3912166848
+			name = Simple Plane Debris
+			type = Debris
+			sit = SPLASHED
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = Runway
+			landedAt = 
+			displaylandedAt = 
+			splashed = True
+			met = 30.225664063094882
+			lct = 18414.186380565698
+			lastUT = 18444.412044628793
+			distanceTraveled = 899.767228339594
+			root = 0
+			lat = -42.521985276412067
+			lon = -72.277861068084746
+			alt = 0.49654132779687643
+			hgt = 0.496541321
+			nrm = 0.767043114,-0.124072134,0.629484773
+			rot = -0.316999406,0.822567761,-0.211681798,0.422000557
+			CoM = 4.90247066E-06,-0.675001979,-2.9265826E-05
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 42.522039986739408
+				LPE = 90
+				LAN = 294.2184777200041
+				MNA = 0
+				EPH = 21938.290177455932
+				REF = 1
+			}
+			PART
+			{
+				name = GearFixed
+				cid = 4292548526
+				uid = 1621948514
+				mid = 4041906592
+				persistentId = 1154810386
+				launchID = 19
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.00000119
+				mirror = 1,1,-1
+				symMethod = Mirror
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.0219999999
+				shielded = False
+				temp = 270.24849079292119
+				tempExt = 275.73991809466736
+				tempExtUnexp = 275.74002004551852
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = False
+				autostrutMode = ForceHeaviest
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = GearFixed
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleWheelBase
+					isEnabled = True
+					wheelType = FREE
+					isGrounded = False
+					autoFriction = True
+					frictionMultiplier = 0.999590039
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActAutoFrictionToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelSuspension
+					isEnabled = True
+					springTweakable = 1
+					damperTweakable = 1
+					suspensionPos = (-1, -1, -1)
+					autoBoost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelBrakes
+					isEnabled = True
+					brakeTweakable = 100
+					brakeInput = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						BrakeAction
+						{
+							actionGroup = Brakes
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelDamage
+					isEnabled = True
+					isDamaged = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 18168.2830797793
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 16423.4353453664
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = a967b9993c7e487c9e4cd2722054c82d
+			persistentId = 1355892679
+			name = Simple Plane Debris
+			type = Debris
+			sit = SPLASHED
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = Runway
+			landedAt = 
+			displaylandedAt = 
+			splashed = True
+			met = 17.004882812838332
+			lct = 18427.407161815954
+			lastUT = 18444.412044628793
+			distanceTraveled = 1.9351619769159672E-13
+			root = 0
+			lat = -42.518709625970466
+			lon = -72.310715023275264
+			alt = -0.48205519886687398
+			hgt = -0.482055187
+			nrm = 0.521026373,0.29445371,0.801142037
+			rot = -0.0925472602,0.786208749,-0.489143372,0.366127789
+			CoM = 8.19563127E-07,-0.67500484,-2.0384754E-05
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 299999.65958577255
+				ECC = 0.99999999999999989
+				INC = 42.518771135942963
+				LPE = 90
+				LAN = 294.18558333164196
+				MNA = 3.1415926207170166
+				EPH = 21938.290177455932
+				REF = 1
+			}
+			PART
+			{
+				name = GearFixed
+				cid = 4292548712
+				uid = 3415357981
+				mid = 4041906592
+				persistentId = 2308681120
+				launchID = 19
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.00000119
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.0219999999
+				shielded = False
+				temp = 270.84301191349272
+				tempExt = 275.8457311521359
+				tempExtUnexp = 275.84599498160463
+				expt = 0.5
+				state = 0
+				PreFailState = 0
+				attached = False
+				autostrutMode = ForceHeaviest
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = GearFixed
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleWheelBase
+					isEnabled = True
+					wheelType = FREE
+					isGrounded = False
+					autoFriction = True
+					frictionMultiplier = 0.999590039
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActAutoFrictionToggle
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelSuspension
+					isEnabled = True
+					springTweakable = 1
+					damperTweakable = 1
+					suspensionPos = (-1, -1, -1)
+					autoBoost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelBrakes
+					isEnabled = True
+					brakeTweakable = 100
+					brakeInput = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						BrakeAction
+						{
+							actionGroup = Brakes
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWheelDamage
+					isEnabled = True
+					isDamaged = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 18168.2830797793
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 16423.4353453664
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+	}
+	LoaderInfo
+	{
+		KerbalEngineer v1.1.3.0 = True
+		KerbalEngineer.Unity v1.0.0.0 = True
+		MiniAVC v1.0.3.2 = True
+		KerbalEngineer = True
+		CHANGES.txt = True
+		LICENCE.txt = True
+		README.htm = True
+	}
+	ROSTER
+	{
+		KERBAL
+		{
+			name = Jebediah Kerman
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			veteran = True
+			tour = False
+			state = Dead
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = 0
+			extraXP = 0
+			suit = Default
+			hero = True
+			EVACHUTE
+			{
+				name = ModuleEvaChute
+				isEnabled = True
+				chuteYawRateAtMaxSpeed = 1
+				chuteMaxSpeedForYawRate = 50
+				chuteYawRateAtMinSpeed = 1
+				chuteMinSpeedForYawRate = 1
+				chuteRollRate = 1
+				chutePitchRate = 1
+				chuteDefaultForwardPitch = 9
+				semiDeployedChuteForwardPitch = 25
+				chutePitchRateDivisorWhenTurning = 1
+				chuteRollRateDivisorWhenPitching = 1
+				chuteYawRateDivisorWhenPitching = 1
+				persistentState = STOWED
+				animTime = 0
+				minAirPressureToOpen = 0.0399999991
+				deployAltitude = 1000
+				spreadAngle = 7
+				automateSafeDeploy = 0
+				stagingEnabled = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					DeployAction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					CutAction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+				}
+				UPGRADESAPPLIED
+				{
+				}
+			}
+			CAREER_LOG
+			{
+				flight = 5
+				0 = ExitVessel,Kerbin
+				0 = BoardVessel,Kerbin
+				0 = Recover
+				1 = Recover
+				2 = Flight,Kerbin
+				2 = ExitVessel,Kerbin
+				2 = BoardVessel,Kerbin
+				2 = Land,Kerbin
+				2 = Recover
+				3 = Recover
+				4 = Flight,Kerbin
+				4 = ExitVessel,Kerbin
+				4 = BoardVessel,Kerbin
+				4 = Suborbit,Kerbin
+				4 = Die
+			}
+			FLIGHT_LOG
+			{
+				flight = 5
+			}
+		}
+		KERBAL
+		{
+			name = Bill Kerman
+			gender = Male
+			type = Crew
+			trait = Engineer
+			brave = 0.5
+			dumb = 0.800000012
+			badS = False
+			veteran = True
+			tour = False
+			state = Dead
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = 0
+			extraXP = 0
+			suit = Default
+			hero = True
+			CAREER_LOG
+			{
+				flight = 1
+				0 = Land,Kerbin
+				0 = Flight,Kerbin
+				0 = Die
+			}
+			FLIGHT_LOG
+			{
+				flight = 1
+			}
+		}
+		KERBAL
+		{
+			name = Bob Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 0.300000012
+			dumb = 0.100000001
+			badS = False
+			veteran = True
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = 0
+			extraXP = 0
+			suit = Default
+			hero = True
+			EVACHUTE
+			{
+				name = ModuleEvaChute
+				isEnabled = True
+				chuteYawRateAtMaxSpeed = 1
+				chuteMaxSpeedForYawRate = 50
+				chuteYawRateAtMinSpeed = 1
+				chuteMinSpeedForYawRate = 1
+				chuteRollRate = 1
+				chutePitchRate = 1
+				chuteDefaultForwardPitch = 9
+				semiDeployedChuteForwardPitch = 25
+				chutePitchRateDivisorWhenTurning = 1
+				chuteRollRateDivisorWhenPitching = 1
+				chuteYawRateDivisorWhenPitching = 1
+				persistentState = STOWED
+				animTime = 0
+				minAirPressureToOpen = 0.0399999991
+				deployAltitude = 1000
+				spreadAngle = 7
+				automateSafeDeploy = 0
+				stagingEnabled = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					DeployAction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					CutAction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+				}
+				UPGRADESAPPLIED
+				{
+				}
+			}
+			CAREER_LOG
+			{
+				flight = 7
+				0 = Flight,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Land,Kerbin
+				0 = ExitVessel,Kerbin
+				0 = BoardVessel,Kerbin
+				0 = Recover
+				1 = Flight,Kerbin
+				1 = Suborbit,Kerbin
+				1 = Land,Kerbin
+				1 = ExitVessel,Kerbin
+				1 = BoardVessel,Kerbin
+				1 = Recover
+				2 = ExitVessel,Kerbin
+				2 = BoardVessel,Kerbin
+				2 = Recover
+				3 = Flight,Kerbin
+				3 = Land,Kerbin
+				3 = ExitVessel,Kerbin
+				3 = BoardVessel,Kerbin
+				3 = Recover
+				4 = Flight,Kerbin
+				4 = Land,Kerbin
+				4 = ExitVessel,Kerbin
+				4 = BoardVessel,Kerbin
+				4 = Recover
+				5 = Land,Kerbin
+				5 = ExitVessel,Kerbin
+				5 = BoardVessel,Kerbin
+				5 = Recover
+				6 = Flight,Kerbin
+				6 = Land,Kerbin
+				6 = ExitVessel,Kerbin
+				6 = BoardVessel,Kerbin
+				6 = Recover
+			}
+			FLIGHT_LOG
+			{
+				flight = 7
+			}
+		}
+		KERBAL
+		{
+			name = Valentina Kerman
+			gender = Female
+			type = Crew
+			trait = Pilot
+			brave = 0.550000012
+			dumb = 0.400000006
+			badS = True
+			veteran = True
+			tour = False
+			state = Dead
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = 0
+			extraXP = 0
+			suit = Default
+			hero = True
+			EVACHUTE
+			{
+				name = ModuleEvaChute
+				isEnabled = True
+				chuteYawRateAtMaxSpeed = 1
+				chuteMaxSpeedForYawRate = 50
+				chuteYawRateAtMinSpeed = 1
+				chuteMinSpeedForYawRate = 1
+				chuteRollRate = 1
+				chutePitchRate = 1
+				chuteDefaultForwardPitch = 9
+				semiDeployedChuteForwardPitch = 25
+				chutePitchRateDivisorWhenTurning = 1
+				chuteRollRateDivisorWhenPitching = 1
+				chuteYawRateDivisorWhenPitching = 1
+				persistentState = STOWED
+				animTime = 0
+				minAirPressureToOpen = 0.0399999991
+				deployAltitude = 1000
+				spreadAngle = 7
+				automateSafeDeploy = 0
+				stagingEnabled = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					DeployAction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+					CutAction
+					{
+						actionGroup = None
+						wasActiveBeforePartWasAdjusted = False
+					}
+				}
+				UPGRADESAPPLIED
+				{
+				}
+			}
+			CAREER_LOG
+			{
+				flight = 13
+				0 = Flight,Kerbin
+				0 = ExitVessel,Kerbin
+				0 = BoardVessel,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Land,Kerbin
+				0 = Recover
+				1 = Flight,Kerbin
+				1 = Land,Kerbin
+				1 = ExitVessel,Kerbin
+				1 = BoardVessel,Kerbin
+				1 = Recover
+				2 = Recover
+				3 = Flight,Kerbin
+				3 = Land,Kerbin
+				3 = ExitVessel,Kerbin
+				3 = BoardVessel,Kerbin
+				3 = Recover
+				4 = Flight,Kerbin
+				4 = Land,Kerbin
+				4 = Recover
+				5 = Flight,Kerbin
+				5 = Suborbit,Kerbin
+				5 = ExitVessel,Kerbin
+				5 = BoardVessel,Kerbin
+				5 = Land,Kerbin
+				5 = Recover
+				6 = Flight,Kerbin
+				6 = Land,Kerbin
+				6 = Recover
+				7 = Flight,Kerbin
+				7 = Suborbit,Kerbin
+				7 = ExitVessel,Kerbin
+				7 = BoardVessel,Kerbin
+				7 = Land,Kerbin
+				7 = Recover
+				8 = Flight,Kerbin
+				8 = Suborbit,Kerbin
+				8 = Land,Kerbin
+				8 = ExitVessel,Kerbin
+				8 = BoardVessel,Kerbin
+				8 = Recover
+				9 = Flight,Kerbin
+				9 = Suborbit,Kerbin
+				9 = Land,Kerbin
+				9 = Recover
+				10 = Flight,Kerbin
+				10 = Suborbit,Kerbin
+				10 = Orbit,Kerbin
+				10 = ExitVessel,Kerbin
+				10 = BoardVessel,Kerbin
+				10 = Land,Kerbin
+				10 = Recover
+				11 = Land,Kerbin
+				11 = ExitVessel,Kerbin
+				11 = Recover
+				12 = Land,Kerbin
+				12 = Flight,Kerbin
+				12 = Die
+			}
+			FLIGHT_LOG
+			{
+				flight = 13
+			}
+		}
+	}
+	MESSAGESYSTEM
+	{
+		flash = False
+	}
+}
