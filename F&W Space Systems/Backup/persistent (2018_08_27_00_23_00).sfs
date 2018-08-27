@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/hexagon
-	launchID = 26
+	launchID = 29
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = True
@@ -192,7 +192,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 10129.251196350591
+		update = 12017.397707596989
 		version = 1.4.5
 		WEIGHTS
 		{
@@ -225,7 +225,7 @@ GAME
 			Moho = 30
 			Minmus = 30
 			Mun = 30
-			Kerbin = 70
+			Kerbin = 82
 			Sun = 30
 		}
 		CONTRACTS
@@ -603,12 +603,12 @@ GAME
 				type = TourismContract
 				prestige = 1
 				seed = -1358039893
-				state = Offered
+				state = Active
 				viewed = Read
 				agent = STEADLER Engineering Corps
 				deadlineType = Floating
 				expiryType = Floating
-				values = 64800,46008000,0,0,0,0,16.69091,30,67689.9247167949,0,0,0
+				values = 64800,46008000,0,0,0,0,16.69091,30,67689.9247167949,11302.1237146692,46019302.1237147,0
 				preposition = right here on Kerbin
 				homeDestinations = True
 				isGeeAdventure = False
@@ -617,6 +617,7 @@ GAME
 				{
 					name = KerbalTourParameter
 					state = Incomplete
+					disableOnStateChange = False
 					allowPartialFailure = True
 					values = 7312,0,0,0,0
 					kerbalName = Cerpont Kerman
@@ -635,6 +636,7 @@ GAME
 				{
 					name = KerbalTourParameter
 					state = Incomplete
+					disableOnStateChange = False
 					allowPartialFailure = True
 					values = 7312,0,0,0,0
 					kerbalName = Natalie Kerman
@@ -653,6 +655,7 @@ GAME
 				{
 					name = KerbalTourParameter
 					state = Incomplete
+					disableOnStateChange = False
 					allowPartialFailure = True
 					values = 7312,0,0,0,0
 					kerbalName = Philsby Kerman
@@ -670,16 +673,18 @@ GAME
 				PARAM
 				{
 					name = KerbalTourParameter
-					state = Incomplete
+					state = Complete
+					disableOnStateChange = False
 					allowPartialFailure = True
-					values = 7312,0,0,0,0
+					values = 0,0,0,0,0
 					kerbalName = Hilger Kerman
 					kerbalGender = Female
 					PARAM
 					{
 						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 2438,0,0,0,0
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
 						kerbalName = Hilger Kerman
@@ -786,56 +791,50 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = bfd89031-38a9-4799-b67a-3a84837e2543
-				type = TourismContract
+				guid = 21e38259-45d2-4e85-9648-773f5670e49a
+				type = PartTest
 				prestige = 1
-				seed = -1858555375
-				state = Active
-				viewed = Read
-				agent = Reaction Systems Ltd
+				seed = -2138946808
+				state = Offered
+				viewed = Seen
+				agent = O.M.B. Demolition Enterprises
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,46008000,0,0,0,0,13.63636,25,24489.9247167949,10103.75119635,46018103.7511963,0
-				preposition = right here on Kerbin
-				homeDestinations = True
-				isGeeAdventure = False
-				tourists = Lengard Kerman|Arrigh Kerman
+				values = 21600,9201600,14850,40837.500885129,54450.001180172,5,9.090909,25,32892.483714669,0,0,0
+				part = Decoupler.2
+				haul = False
+				dest = 1
+				sit = ESCAPING
+				exp = True
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = PartTest
 					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 7312,0,0,0,0
-					kerbalName = Lengard Kerman
-					kerbalGender = Male
+					values = 0,0,0,0,0
+					part = Decoupler.2
+					body = Kerbin
+					situation = ESCAPING
+					uniqueID = 0.73705737047691711
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
 					PARAM
 					{
-						name = KerbalDestinationParameter
+						name = ReachDestination
 						state = Incomplete
-						values = 2438,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Lengard Kerman
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
 					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 7312,0,0,0,0
-					kerbalName = Arrigh Kerman
-					kerbalGender = Female
 					PARAM
 					{
-						name = KerbalDestinationParameter
+						name = ReachSituation
 						state = Incomplete
-						values = 2438,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Arrigh Kerman
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ESCAPING
+						title = 
 					}
 				}
 			}
@@ -1374,6 +1373,63 @@ GAME
 					}
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = bfd89031-38a9-4799-b67a-3a84837e2543
+				type = TourismContract
+				prestige = 1
+				seed = -1858555375
+				state = Completed
+				viewed = Read
+				agent = Reaction Systems Ltd
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,46008000,0,0,0,0,13.63636,25,24489.9247167949,10103.75119635,46018103.7511963,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Lengard Kerman|Arrigh Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Lengard Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Lengard Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Arrigh Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Arrigh Kerman
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -1386,7 +1442,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 170224.41855981614
+		funds = 48644.516683366557
 	}
 	SCENARIO
 	{
@@ -1476,6 +1532,14 @@ GAME
 						crews = Jebediah Kerman
 					}
 				}
+				Spacewalk
+				{
+					completed = 10279.609467836824
+					crew
+					{
+						crews = Jebediah Kerman
+					}
+				}
 				SurfaceEVA
 				{
 					completed = 22.559999999999608
@@ -1504,7 +1568,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 3.79600906
+		sci = 11.0982599
 		Tech
 		{
 			id = start
@@ -1795,6 +1859,16 @@ GAME
 			sci = 25
 			cap = 32
 		}
+		Science
+		{
+			id = evaReport@KerbinInSpaceLowShores
+			title = EVA Report from space just above Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
 	}
 	SCENARIO
 	{
@@ -1805,7 +1879,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 67.8605957
+		rep = 78.8029175
 	}
 	SCENARIO
 	{
@@ -2087,7 +2161,7 @@ GAME
 		}
 		SpaceCenter/AstronautComplex
 		{
-			lvl = 0
+			lvl = 0.5
 		}
 		SpaceCenter/MissionControl
 		{
@@ -2115,7 +2189,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.5
-		UT = 10129.591196350599
+		UT = 12017.797707596997
 		activeVessel = 3
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -2134,9 +2208,9 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 7440.7664795539986
+			met = 9373.3329908013638
 			lct = 2622.4047167951544
-			lastUT = 10063.331196349152
+			lastUT = 11995.817707596518
 			distanceTraveled = 11018.880936720661
 			root = 0
 			lat = -0.14053690157075957
@@ -2145,7 +2219,7 @@ GAME
 			hgt = 0.475316703
 			nrm = -0.697724044,-0.714968562,-0.0447329283
 			rot = -0.0260865316,0.748454511,0.510063648,-0.423049122
-			CoM = 2.0634141E-05,-0.000131591762,2.08130514E-05
+			CoM = 0.000136237592,-4.25891267E-06,6.90152956E-06
 			stg = 2
 			prst = False
 			ref = 0
@@ -2157,13 +2231,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
-				ECC = 1
-				INC = 0.1405369070152569
-				LPE = 90
-				LAN = 94.203985097212069
-				MNA = 0
-				EPH = 10129.21119635059
+				SMA = 300078.9550674223
+				ECC = 0.99999999999999989
+				INC = 0.14053690742501038
+				LPE = 90.000000000000014
+				LAN = 125.7462809280957
+				MNA = 3.1415926207170166
+				EPH = 12017.317707596987
 				REF = 1
 			}
 			PART
@@ -2191,9 +2265,9 @@ GAME
 				attN = bottom, -1
 				mass = 0.0399999991
 				shielded = False
-				temp = 303.91714353672666
-				tempExt = 303.81218829684576
-				tempExtUnexp = 303.81238148153489
+				temp = 302.55272890340632
+				tempExt = 302.4788416909272
+				tempExtUnexp = 302.47897429686395
 				expt = 0.5
 				state = 1
 				PreFailState = 0
@@ -2343,9 +2417,9 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 2976.0176758252937
+			met = 4908.584187072659
 			lct = 7087.1535205238588
-			lastUT = 10063.331196349152
+			lastUT = 11995.817707596518
 			distanceTraveled = 6280.9584918507653
 			root = 0
 			lat = -0.009697351131085101
@@ -2368,11 +2442,11 @@ GAME
 			{
 				SMA = 0
 				ECC = 1
-				INC = 0.0096973510368247463
+				INC = 0.0096973511871605318
 				LPE = 90
-				LAN = 94.24345339333604
+				LAN = 125.78574922135135
 				MNA = 0
-				EPH = 10129.21119635059
+				EPH = 12017.317707596987
 				REF = 1
 			}
 			PART
@@ -2400,9 +2474,9 @@ GAME
 				attN = bottom, -1
 				mass = 0.0399999991
 				shielded = False
-				temp = 304.66749591592838
-				tempExt = 304.57029431683441
-				tempExtUnexp = 304.57047346215097
+				temp = 303.42599738815215
+				tempExt = 303.34833567467371
+				tempExtUnexp = 303.34847488337357
 				expt = 0.5
 				state = 1
 				PreFailState = 0
@@ -2552,9 +2626,9 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 2400.7976758127379
+			met = 4333.3641870601032
 			lct = 7662.3735205364146
-			lastUT = 10063.331196349152
+			lastUT = 11995.817707596518
 			distanceTraveled = 14286.804575094386
 			root = 0
 			lat = -0.19441402179759124
@@ -2563,7 +2637,7 @@ GAME
 			hgt = 0.287039757
 			nrm = -0.0242213309,-0.922798455,0.384520829
 			rot = -0.817736745,0.17513524,-0.0448345877,-0.546465158
-			CoM = -6.06968679E-05,-0.000197655158,-4.41795419E-05
+			CoM = 0,0,0
 			stg = 2
 			prst = False
 			ref = 0
@@ -2577,11 +2651,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 0.19441401009106637
-				LPE = 90.000000000000014
-				LAN = 94.200432122603843
+				INC = 0.19441402179848641
+				LPE = 90
+				LAN = 125.74272795350123
 				MNA = 0
-				EPH = 10129.21119635059
+				EPH = 12017.317707596987
 				REF = 1
 			}
 			PART
@@ -2609,9 +2683,9 @@ GAME
 				attN = bottom, -1
 				mass = 0.0399999991
 				shielded = False
-				temp = 304.12271761355072
-				tempExt = 304.01858455646163
-				tempExtUnexp = 304.01877623697953
+				temp = 302.7593277064143
+				tempExt = 302.68632868098064
+				tempExtUnexp = 302.68645964261555
 				expt = 0.5
 				state = 1
 				PreFailState = 0
@@ -2749,7 +2823,7 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 574df508c6b34d1ea097712eabd9470b
+			pid = 34675e4ca47b49c996d382a6ca8a6bc9
 			persistentId = 3261853920
 			name = Shuttle
 			type = Ship
@@ -2762,20 +2836,20 @@ GAME
 			displaylandedAt = LaunchPad
 			splashed = False
 			met = 0
-			lct = 10129.591196350599
-			lastUT = 10129.591196350599
+			lct = 12017.797707596997
+			lastUT = 12017.797707596997
 			distanceTraveled = 0
 			root = 0
-			lat = -0.097208244144883688
-			lon = -74.557613104145432
-			alt = 77.093729039188474
+			lat = -0.097208239412019684
+			lon = -74.55761876709812
+			alt = 77.132547000655904
 			hgt = 7.11023712
-			nrm = 0.000746667385,0.999999762,5.96046448E-08
-			rot = -0.70098871,-0.0922178701,-0.0972654074,0.700464249
-			CoM = 0.000190973282,-3.27955055,0.0110388994
+			nrm = 0.000746995211,0.999999762,2.98023224E-07
+			rot = -0.700988829,-0.0922175646,-0.0972653925,0.700464189
+			CoM = 0.000190854073,-3.27955008,0.011038661
 			stg = 3
 			prst = False
-			ref = 569151511
+			ref = 3198097394
 			ctrl = True
 			PQSMin = 2
 			PQSMax = 9
@@ -2784,23 +2858,23 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300819.26463376352
-				ECC = 0.99479848775766999
-				INC = 0.097207191942076748
-				LPE = 90.000000000000014
-				LAN = 274.6651297436506
-				MNA = 3.1415926535897887
-				EPH = 10129.591196350599
+				SMA = 300819.28424568288
+				ECC = 0.99479848674822691
+				INC = 0.097207187116648497
+				LPE = 90
+				LAN = 306.2090904870102
+				MNA = -3.1415926535897887
+				EPH = 12017.797707596997
 				REF = 1
 			}
 			PART
 			{
 				name = mk1pod
 				cid = 4294617010
-				uid = 569151511
-				mid = 3360772399
+				uid = 3198097394
+				mid = 1796619985
 				persistentId = 1176448596
-				launchID = 25
+				launchID = 28
 				parent = 0
 				position = 0,0,0
 				rotation = 0,0,0,1
@@ -2818,9 +2892,9 @@ GAME
 				attN = top, 2
 				mass = 0.800000012
 				shielded = False
-				temp = 299.11630095054267
-				tempExt = 299.22592637100132
-				tempExtUnexp = 299.22274956662068
+				temp = 298.13207683744275
+				tempExt = 298.19416180672994
+				tempExtUnexp = 298.19096615391214
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -2828,7 +2902,7 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = Squad/Flags/hexagon
-				rTrf = mk1pod (Shuttle)
+				rTrf = mk1pod
 				modCost = 0
 				crew = Jebediah Kerman
 				EVENTS
@@ -3091,10 +3165,10 @@ GAME
 			{
 				name = GooExperiment
 				cid = 4294612056
-				uid = 48124310
-				mid = 3360772399
+				uid = 1961901457
+				mid = 1796619985
 				persistentId = 770497548
-				launchID = 25
+				launchID = 28
 				parent = 0
 				position = -1.8458996109416148E-08,0.13680744171142578,0.35519072413444519
 				rotation = -1.99910133E-08,0.983294487,-0.182021797,-1.07992854E-07
@@ -3110,9 +3184,9 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.0500000007
 				shielded = False
-				temp = 299.11649395008806
-				tempExt = 299.24362185579236
-				tempExtUnexp = 299.24118726549341
+				temp = 298.13214516927701
+				tempExt = 298.20552366739111
+				tempExtUnexp = 298.20275200254696
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -3190,10 +3264,10 @@ GAME
 			{
 				name = parachuteSingle
 				cid = 4294609984
-				uid = 970345503
-				mid = 3360772399
+				uid = 1207347857
+				mid = 1796619985
 				persistentId = 3974453549
-				launchID = 25
+				launchID = 28
 				parent = 0
 				position = 0,0.65745735168457031,0
 				rotation = 0,0,0,1
@@ -3210,9 +3284,9 @@ GAME
 				attN = bottom, 0
 				mass = 0.100000001
 				shielded = False
-				temp = 299.11638331945949
-				tempExt = 299.23061726730452
-				tempExtUnexp = 299.22854197734318
+				temp = 298.13210743828671
+				tempExt = 298.19798863124436
+				tempExtUnexp = 298.1956012908858
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -3312,10 +3386,10 @@ GAME
 			{
 				name = sensorThermometer
 				cid = 4294435076
-				uid = 3773788215
-				mid = 3360772399
+				uid = 3113805988
+				mid = 1796619985
 				persistentId = 2013780056
-				launchID = 25
+				launchID = 28
 				parent = 0
 				position = -0.40877923369407654,0.24405097961425781,2.4365142792248662E-08
 				rotation = 0.12870881,0.69529444,-0.128708899,0.695293963
@@ -3331,9 +3405,9 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 299.11636258270215
-				tempExt = 299.18384316807106
-				tempExtUnexp = 299.181721887658
+				temp = 298.13209517073386
+				tempExt = 298.16892041287144
+				tempExtUnexp = 298.1668992370885
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -3406,10 +3480,10 @@ GAME
 			{
 				name = mk1pod
 				cid = 4294057980
-				uid = 133318997
-				mid = 3360772399
+				uid = 1955305597
+				mid = 1796619985
 				persistentId = 2364012350
-				launchID = 25
+				launchID = 28
 				parent = 0
 				position = 0,-1.0474138259887695,0
 				rotation = 0,0,0,1
@@ -3427,9 +3501,9 @@ GAME
 				attN = top, 0
 				mass = 0.800000012
 				shielded = False
-				temp = 299.11632353038709
-				tempExt = 299.30243493772713
-				tempExtUnexp = 299.30068202209446
+				temp = 298.13208716741121
+				tempExt = 298.23806973344483
+				tempExtUnexp = 298.23568209121288
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -3439,7 +3513,7 @@ GAME
 				flag = Squad/Flags/hexagon
 				rTrf = mk1pod
 				modCost = 0
-				crew = Arrigh Kerman
+				crew = Philsby Kerman
 				EVENTS
 				{
 				}
@@ -3700,10 +3774,10 @@ GAME
 			{
 				name = Decoupler.1
 				cid = 4294121458
-				uid = 1961376939
-				mid = 3360772399
+				uid = 3618772227
+				mid = 1796619985
 				persistentId = 1894461397
-				launchID = 25
+				launchID = 28
 				parent = 4
 				position = 0,-1.5024518966674805,0
 				rotation = 0,0,0,1
@@ -3721,9 +3795,9 @@ GAME
 				attN = bottom, 6
 				mass = 0.0399999991
 				shielded = False
-				temp = 299.11646415017083
-				tempExt = 299.22894370998824
-				tempExtUnexp = 299.22591429988563
+				temp = 298.13213213886166
+				tempExt = 298.19650395339613
+				tempExtUnexp = 298.1933757556356
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -3815,10 +3889,10 @@ GAME
 			{
 				name = fuelTankSmallFlat
 				cid = 4294384452
-				uid = 2351981311
-				mid = 3360772399
+				uid = 4060958508
+				mid = 1796619985
 				persistentId = 439710501
-				launchID = 25
+				launchID = 28
 				parent = 5
 				position = 0,-1.8649520874023438,0
 				rotation = 0,0,0,1
@@ -3836,9 +3910,9 @@ GAME
 				attN = bottom, 7
 				mass = 0.0625
 				shielded = False
-				temp = 299.1162990830569
-				tempExt = 299.21481809929213
-				tempExtUnexp = 299.21217027988314
+				temp = 298.13207644167795
+				tempExt = 298.18999751208628
+				tempExtUnexp = 298.18711275288712
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -3884,10 +3958,10 @@ GAME
 			{
 				name = fuelTankSmall
 				cid = 4294620002
-				uid = 3480410291
-				mid = 3360772399
+				uid = 2595748304
+				mid = 1796619985
 				persistentId = 217960344
-				launchID = 25
+				launchID = 28
 				parent = 6
 				position = 0,-2.7327022552490234,0
 				rotation = 0,0,0,1
@@ -3905,9 +3979,9 @@ GAME
 				attN = bottom, 8
 				mass = 0.125
 				shielded = False
-				temp = 299.11629395924024
-				tempExt = 299.21436361018766
-				tempExtUnexp = 299.21174274141947
+				temp = 298.13207489963486
+				tempExt = 298.18985584715813
+				tempExtUnexp = 298.1869844294331
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -3953,10 +4027,10 @@ GAME
 			{
 				name = fuelTankSmall
 				cid = 4294619254
-				uid = 4249242876
-				mid = 3360772399
+				uid = 3850158806
+				mid = 1796619985
 				persistentId = 2495382844
-				launchID = 25
+				launchID = 28
 				parent = 7
 				position = 0,-3.8432025909423828,0
 				rotation = 0,0,0,1
@@ -3974,9 +4048,9 @@ GAME
 				attN = bottom, 9
 				mass = 0.125
 				shielded = False
-				temp = 299.11629393956434
-				tempExt = 299.21424882634994
-				tempExtUnexp = 299.21163743371318
+				temp = 298.13207489733554
+				tempExt = 298.18983534789049
+				tempExtUnexp = 298.18696704765534
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -4022,10 +4096,10 @@ GAME
 			{
 				name = fuelTankSmall
 				cid = 4294617320
-				uid = 901994208
-				mid = 3360772399
+				uid = 3729620213
+				mid = 1796619985
 				persistentId = 4056883308
-				launchID = 25
+				launchID = 28
 				parent = 8
 				position = 0,-4.9537029266357422,0
 				rotation = 0,0,0,1
@@ -4043,9 +4117,9 @@ GAME
 				attN = bottom, 10
 				mass = 0.125
 				shielded = False
-				temp = 299.11629373762958
-				tempExt = 299.21266166320049
-				tempExtUnexp = 299.21013883907881
+				temp = 298.13207486412318
+				tempExt = 298.18933326901072
+				tempExtUnexp = 298.18651658283903
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -4091,10 +4165,10 @@ GAME
 			{
 				name = liquidEngine2
 				cid = 4294615154
-				uid = 2656447511
-				mid = 3360772399
+				uid = 1591963672
+				mid = 1796619985
 				persistentId = 964824706
-				launchID = 25
+				launchID = 28
 				parent = 9
 				position = 0,-6.4107789993286133,0
 				rotation = 0,0,0,1
@@ -4112,9 +4186,9 @@ GAME
 				attN = bottom, -1
 				mass = 1.5
 				shielded = False
-				temp = 299.1163277482064
-				tempExt = 299.19374947561738
-				tempExtUnexp = 299.19182206177248
+				temp = 298.13208607731571
+				tempExt = 298.17931306220618
+				tempExtUnexp = 298.17705881464929
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -4326,10 +4400,10 @@ GAME
 			{
 				name = parachuteRadial
 				cid = 4293981176
-				uid = 2138572401
-				mid = 3360772399
+				uid = 3420020482
+				mid = 1796619985
 				persistentId = 1343722783
-				launchID = 25
+				launchID = 28
 				parent = 4
 				position = 0,-0.89260005950927734,0.44341376423835754
 				rotation = -1.99910133E-08,0.983294487,-0.182021797,-1.07992854E-07
@@ -4345,9 +4419,9 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.100000001
 				shielded = False
-				temp = 299.11639948876001
-				tempExt = 299.22120058828739
-				tempExtUnexp = 299.2182688759471
+				temp = 298.13210761145098
+				tempExt = 298.19086076763256
+				tempExtUnexp = 298.18796689399056
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -4447,10 +4521,10 @@ GAME
 			{
 				name = sensorBarometer
 				cid = 4293987976
-				uid = 592559640
-				mid = 3360772399
+				uid = 1392006047
+				mid = 1796619985
 				persistentId = 785507109
-				launchID = 25
+				launchID = 28
 				parent = 0
 				position = 0.41853043437004089,0.21942043304443359,2.4946359644673066E-08
 				rotation = -0.128708959,0.695293844,-0.128708839,-0.695294559
@@ -4466,9 +4540,9 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 299.11664363330613
-				tempExt = 299.21760890763267
-				tempExtUnexp = 299.2149122496358
+				temp = 298.13218703602024
+				tempExt = 298.19132102170789
+				tempExtUnexp = 298.1884277834875
 				expt = 0.5
 				state = 0
 				PreFailState = 0
@@ -4668,7 +4742,7 @@ GAME
 			}
 			CAREER_LOG
 			{
-				flight = 23
+				flight = 26
 				0 = ExitVessel,Kerbin
 				0 = BoardVessel,Kerbin
 				0 = Recover
@@ -4740,10 +4814,24 @@ GAME
 				22 = Suborbit,Kerbin
 				22 = Land,Kerbin
 				22 = Recover
+				23 = Flight,Kerbin
+				23 = Suborbit,Kerbin
+				23 = ExitVessel,Kerbin
+				23 = BoardVessel,Kerbin
+				23 = Land,Kerbin
+				23 = Recover
+				24 = Flight,Kerbin
+				24 = Suborbit,Kerbin
+				24 = Land,Kerbin
+				24 = Recover
+				25 = Flight,Kerbin
+				25 = Suborbit,Kerbin
+				25 = Land,Kerbin
+				25 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 23
+				flight = 26
 			}
 		}
 		KERBAL
@@ -4842,12 +4930,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Lengard Kerman
-			gender = Male
+			name = Cerpont Kerman
+			gender = Female
 			type = Tourist
 			trait = Tourist
-			brave = 0.817584097
-			dumb = 0.900395751
+			brave = 0.61118412
+			dumb = 0.295557261
 			badS = False
 			veteran = False
 			tour = False
@@ -4872,76 +4960,16 @@ GAME
 		}
 		KERBAL
 		{
-			name = Arrigh Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.31673488
-			dumb = 0.396851033
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = 0
-			extraXP = 0
-			suit = Default
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Cerpont Kerman
-			gender = Female
-			type = Unowned
-			trait = Tourist
-			brave = 0.61118412
-			dumb = 0.295557261
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			suit = Default
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
 			name = Natalie Kerman
 			gender = Female
-			type = Unowned
+			type = Tourist
 			trait = Tourist
 			brave = 0.283000112
 			dumb = 0.829618037
 			badS = False
 			veteran = False
 			tour = False
-			state = Assigned
+			state = Available
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
@@ -4964,7 +4992,7 @@ GAME
 		{
 			name = Philsby Kerman
 			gender = Male
-			type = Unowned
+			type = Tourist
 			trait = Tourist
 			brave = 0.293409407
 			dumb = 0.290713042
@@ -4977,37 +5005,7 @@ GAME
 			gExperienced = 0
 			outDueToG = False
 			ToD = 0
-			idx = -1
-			extraXP = 0
-			suit = Default
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Hilger Kerman
-			gender = Female
-			type = Unowned
-			trait = Tourist
-			brave = 0.861465156
-			dumb = 0.814198136
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
+			idx = 0
 			extraXP = 0
 			suit = Default
 			hero = False
@@ -5506,6 +5504,46 @@ GAME
 		flash = True
 		MESSAGE
 		{
+			title = Contract Parameter Complete
+			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Hilger's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 7,312   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 2,438   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Ferry two tourists safely to their destination and back.</b>~n~nThe tour was a success! Lengard and Arrigh had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 10 <color=#feb200>(-3)</color>  </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Lengard's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 7,312   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Arrigh's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 7,312   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
 			title = Contract Complete
 			message = <b>Ferry two tourists safely to their destination and back.</b>~n~nThe tour was a success! Ludemone and Teddous had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 10 <color=#feb200>(-3)</color>  </color>~n~n
 			color = 2
@@ -5742,15 +5780,15 @@ GAME
 			message = <b>Gather scientific data from Kerbin.</b>~n~n'Achieve goal' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,840   </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1   </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1   </color>
 			color = 2
 			icon = 3
-			read = False
+			read = True
 		}
 		MESSAGE
 		{
 			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have performed an EVA test at home.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 1,920 </color>~n~n We have performed the first one of our experiments at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,920 </color>~n~n We have broken a speed record of 25m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have launched our first vessel.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  960 </color>~n~n We have broken a speed record of 80m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 500m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a speed record of 250m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have returned to the surface.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  960 </color>~n~n We have recovered our first crew from a mission.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  960 </color>~n~n We have broken an altitude record of 2,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a speed record of 790m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 7,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 1,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 22km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 70km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have reached space.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 3,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 10km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 32km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 100km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have entered orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  14,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have returned to the surface from orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  14,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n
+			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have performed an EVA test at home.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 1,920 </color>~n~n We have performed the first one of our experiments at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,920 </color>~n~n We have broken a speed record of 25m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have launched our first vessel.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  960 </color>~n~n We have broken a speed record of 80m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 500m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a speed record of 250m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have returned to the surface.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  960 </color>~n~n We have recovered our first crew from a mission.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  960 </color>~n~n We have broken an altitude record of 2,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a speed record of 790m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 7,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 1,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 22km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 70km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have reached space.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 3,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 10km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 32km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 100km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  5,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have entered orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  14,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have returned to the surface from orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  14,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have performed a spacewalk in orbit of Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  7,200 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n
 			color = 3
 			icon = 6
-			read = False
+			read = True
 		}
 	}
 }
