@@ -2,7 +2,7 @@ ship = Test
 version = 1.4.5
 description = 
 type = VAB
-size = 1.26889658,2.10681343,1.270908
+size = 1.51481557,3.03346252,1.30201006
 steamPublishedFileId = 0
 persistentId = 1074739807
 rot = 0,0,0,0
@@ -33,9 +33,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
+	link = radialDecoupler_4294352328
 	link = parachuteSingle_4294268680
-	link = liquidEngine3_4294195194
-	attN = bottom,liquidEngine3_4294195194_0|-0.4050379|0
+	link = solidBooster.sm_4294264810
+	attN = bottom,solidBooster.sm_4294264810_0|-0.4050379|0
 	attN = top,parachuteSingle_4294268680_0|0.6423756|0
 	EVENTS
 	{
@@ -294,6 +295,113 @@ PART
 }
 PART
 {
+	part = radialDecoupler_4294352328
+	partName = Part
+	persistentId = 390868034
+	pos = -0.452975452,15.1567574,3.28435874E-08
+	attPos = 0,0,0
+	attPos0 = -0.452975452,0.156757355,3.28435874E-08
+	rot = -6.3220277E-08,3.37174811E-07,-0.182021827,0.983294547
+	attRot = 0,0,0,1
+	attRot0 = -6.3220277E-08,3.37174811E-07,-0.182021827,0.983294547
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 0
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,mk1pod_4294425800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			EnableAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DisableAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
 	part = parachuteSingle_4294268680
 	partName = Part
 	persistentId = 3492105327
@@ -406,12 +514,12 @@ PART
 }
 PART
 {
-	part = liquidEngine3_4294195194
+	part = solidBooster.sm_4294264810
 	partName = Part
-	persistentId = 63401869
-	pos = 0,14.3074617,0
+	persistentId = 2309903233
+	pos = 0,13.9074621,0
 	attPos = 0,0,0
-	attPos0 = 0,-0.692538261,0
+	attPos0 = 0,-1.09253788,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -419,17 +527,17 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 2
 	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,mk1pod_4294425800_0|0.2875|0
+	attN = top,mk1pod_4294425800_0|0.6875|0
 	EVENTS
 	{
 	}
@@ -478,97 +586,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		gimbalActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LockAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			FreeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			TogglePitchAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleYawAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRollAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		animState = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		activejettisonName = fairing
-		isJettisoned = True
-		shroudHideOverride = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTestSubject
 		isEnabled = True
 		stagingEnabled = True
@@ -596,5 +613,16 @@ PART
 		UPGRADESAPPLIED
 		{
 		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 140
+		maxAmount = 140
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
 	}
 }
