@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Agencies/R&D
-	launchID = 20
+	launchID = 23
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = True
@@ -186,6 +186,11 @@ GAME
 		{
 			GameSeed = 823785762
 			MaxDeltaTime = 21600
+			BIOME_LOCK_DATA
+			{
+				PlanetId = 1
+				BiomeName = Shores
+			}
 		}
 	}
 	SCENARIO
@@ -261,7 +266,7 @@ GAME
 				}
 				Landing
 				{
-					completedManned = 1091.1858752437599
+					completed = 1091.1858752437599
 					vessel
 					{
 						name = Skipper
@@ -520,7 +525,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 114.299866
+		sci = 32.6554108
 		Tech
 		{
 			id = start
@@ -818,6 +823,19 @@ GAME
 			part = batteryBankMini
 			part = solarPanels5
 			part = probeCoreOcto
+		}
+		Tech
+		{
+			id = advElectrics
+			state = Available
+			cost = 160
+			part = foldingRadMed
+			part = LgRadialSolarPanel
+			part = ksp.r.largeBatteryPack
+			part = solarPanels3
+			part = solarPanels1
+			part = solarPanels4
+			part = solarPanels2
 		}
 		Science
 		{
@@ -1262,11 +1280,11 @@ GAME
 		Science
 		{
 			id = recovery@KerbinSubOrbited
-			title = Recovery of a vessel returned from a sub-orbital flight on Kerbin
+			title = Recovery of a vessel after a sub-orbital flight.
 			dsc = 1
-			scv = 0.166666701
+			scv = 0.00462959195
 			sbv = 8
-			sci = 8
+			sci = 9.5555563
 			cap = 9.60000038
 		}
 		Science
@@ -1939,6 +1957,176 @@ GAME
 			sci = 32
 			cap = 32
 		}
+		Science
+		{
+			id = atmosphereAnalysis@KerbinSrfLandedLaunchPad
+			title = Atmosphere Analysis from LaunchPad
+			dsc = 10
+			scv = 0.166666701
+			sbv = 0.300000012
+			sci = 6
+			cap = 7.20000029
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedNorthernIceShelf
+			title = Materials Study from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.300000012
+			sci = 7.50000048
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedNorthernIceShelf
+			title = Mystery Goo™ Observation from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0.230769247
+			sbv = 0.300000012
+			sci = 3
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedNorthernIceShelf
+			title = Crew Report from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = atmosphereAnalysis@KerbinSrfLandedNorthernIceShelf
+			title = Atmosphere Analysis from Kerbin's Northern Ice Shelf
+			dsc = 10
+			scv = 0.166666701
+			sbv = 0.300000012
+			sci = 6
+			cap = 7.20000029
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedNorthernIceShelf
+			title = Atmospheric Pressure Scan from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedNorthernIceShelf
+			title = Temperature Scan from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedNorthernIceShelf
+			title = EVA Report from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedNorthernIceShelf
+			title = Surface Sample from Kerbin's Northern Ice Shelf
+			dsc = 1
+			scv = 0.25
+			sbv = 0.300000012
+			sci = 9
+			cap = 12
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedSouthernIceShelf
+			title = Crew Report from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = atmosphereAnalysis@KerbinSrfLandedSouthernIceShelf
+			title = Atmosphere Analysis from Kerbin's Southern Ice Shelf
+			dsc = 10
+			scv = 0.166666701
+			sbv = 0.300000012
+			sci = 6
+			cap = 7.20000029
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedSouthernIceShelf
+			title = Mystery Goo™ Observation from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0.230769247
+			sbv = 0.300000012
+			sci = 3
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedSouthernIceShelf
+			title = Temperature Scan from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedSouthernIceShelf
+			title = Atmospheric Pressure Scan from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedSouthernIceShelf
+			title = Materials Study from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.300000012
+			sci = 7.50000048
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedSouthernIceShelf
+			title = EVA Report from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedSouthernIceShelf
+			title = Surface Sample from Kerbin's Southern Ice Shelf
+			dsc = 1
+			scv = 0.25
+			sbv = 0.300000012
+			sci = 9
+			cap = 12
+		}
 	}
 	SCENARIO
 	{
@@ -2138,7 +2326,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.5
-		UT = 882664.19590943865
+		UT = 885911.36501211161
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -5154,13 +5342,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = 4.27772205173145
 				LPE = 270
-				LAN = 24.741577267632522
+				LAN = 31.323244209422114
 				MNA = 0
-				EPH = 882401.95590919442
+				EPH = 884942.92501120968
 				REF = 2
 			}
 			PART
@@ -7307,6 +7495,215 @@ GAME
 				}
 			}
 		}
+		VESSEL
+		{
+			pid = e9d1150181b943c48e639cbc995c2d03
+			persistentId = 1647002947
+			name = Orbiter Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 233.80000021774322
+			lct = 884709.06501099188
+			lastUT = 884942.90501120966
+			distanceTraveled = 16543.599727974357
+			root = 0
+			lat = -84.059706597852596
+			lon = 53.219603147244669
+			alt = 30.130436852457933
+			hgt = 0.163883775
+			nrm = -0.185108691,0.981856585,-0.0411395207
+			rot = -0.502917528,-0.116497859,-0.854060173,-0.0639024898
+			CoM = 0,0,0
+			stg = 2
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 84.059706597852596
+				LPE = 90
+				LAN = 76.883218176282469
+				MNA = 0
+				EPH = 884942.92501120968
+				REF = 1
+			}
+			PART
+			{
+				name = Decoupler.1
+				cid = 4294211750
+				uid = 482791907
+				mid = 271486167
+				persistentId = 306136493
+				launchID = 22
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				resPri = 0
+				dstg = 1
+				sqor = 1
+				sepI = 1
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0399999991
+				shielded = False
+				temp = 290.89169413977072
+				tempExt = 285.38410014396101
+				tempExtUnexp = 285.38652904171761
+				expt = 0.5
+				state = 1
+				PreFailState = 0
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/R&D
+				rTrf = Decoupler.1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = True
+					stagingEnabled = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleToggleCrossfeed
+					isEnabled = True
+					crossfeedStatus = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						EnableAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+						DisableAction
+						{
+							actionGroup = None
+							wasActiveBeforePartWasAdjusted = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 884078.227356987
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 884015.747356928
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
 	}
 	LoaderInfo
 	{
@@ -7385,7 +7782,7 @@ GAME
 			}
 			CAREER_LOG
 			{
-				flight = 19
+				flight = 22
 				0 = ExitVessel,Kerbin
 				0 = BoardVessel,Kerbin
 				0 = Recover
@@ -7495,10 +7892,23 @@ GAME
 				18 = Flyby,Kerbin
 				18 = Land,Kerbin
 				18 = Recover
+				19 = Recover
+				20 = Flight,Kerbin
+				20 = Suborbit,Kerbin
+				20 = Land,Kerbin
+				20 = ExitVessel,Kerbin
+				20 = BoardVessel,Kerbin
+				20 = Recover
+				21 = Flight,Kerbin
+				21 = Suborbit,Kerbin
+				21 = Land,Kerbin
+				21 = ExitVessel,Kerbin
+				21 = BoardVessel,Kerbin
+				21 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 19
+				flight = 22
 			}
 		}
 		KERBAL
